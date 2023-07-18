@@ -1,0 +1,1122 @@
+body {
+    width: 100vw;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+}
+
+input {
+    font-family: inherit;
+}
+
+/* //BUTTONS */
+
+input.delivery,
+input.accept,
+input.decline {
+    /* margin: 1rem; */
+    width: 7rem !important;
+    height: 2.0rem !important;
+    background-color: white;
+    color: black;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    font-size: large;
+    margin: 0.25rem !important;
+    padding: 0.5rem !important;
+    transition-duration: 500ms;
+    transition-delay: 10ms;
+    transition-timing-function: ease-in-out;
+    align-items: center;
+    text-align: center;
+
+}
+
+input.accept {
+    border-color: greenyellow;
+}
+
+input.decline {
+    border-color: orangered;
+}
+
+input.accept:hover {
+    border-color: greenyellow;
+    box-shadow: inset 0px 0px 50px greenyellow;
+    font-weight: bold;
+}
+
+input.decline:hover {
+    border-color: orangered;
+    box-shadow: inset 0px 0px 50px orangered;
+    font-weight: bold;
+}
+
+input.delivery:hover {
+    border-color: gray;
+    box-shadow: inset 0px 0px 50px lightslategray;
+    font-weight: bold;
+}
+
+
+
+.alert-danger {
+    color: white;
+    background-color: red;
+
+    padding: 1rem;
+    width: 60%;
+
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+/* LOGIN */
+
+.login {
+    width: 30%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    padding-top: 10rem;
+}
+
+.login form {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    padding-top: 1rem;
+}
+
+.login form input {
+    padding: 5px;
+    background-color: whitesmoke;
+    font-size: 14px;
+
+    align-items: center;
+}
+
+.login input.sub {
+    width: 5rem;
+    height: auto;
+    background-color: lightblue;
+}
+
+/* HEADER */
+
+header {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 2rem;
+    font-size: large;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+header form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: white;
+    width: auto;
+    padding: 0.25rem;
+    border: solid gray 0.5px;
+    border-radius: 10px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header form.focused {
+    border: solid black 1px;
+
+}
+
+header form.focused input.image {
+    opacity: 100%;
+}
+
+header input.image {
+    width: 1.5rem; 
+    height: auto;
+    object-fit: fill;
+    opacity: 60%;
+}
+
+header input.field {
+    border: none;
+    width: 7rem;
+    height: 2rem;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 1rem;
+}
+header input.field:focus {
+    outline: none;
+}
+
+header input {
+    border: none;
+    width: 3rem;
+    height: 2rem;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+header nav a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header img {
+    height: 32px;
+    width: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header a {
+    opacity: 60%;
+    transition-duration: 60ms;
+    transition-delay: 20ms;
+    transition-timing-function: ease-in-out;
+}
+header a:hover {
+    opacity: 100%;
+    scale: 105%;
+}
+
+header hr {
+    grid-column: span 3;
+    width: 120%;
+    margin-left: -10%;
+    border: 0.5px solid black;
+}
+
+
+/* FOOTER */
+
+footer {
+    position: absolute;
+    bottom: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: gray;
+}
+
+
+footer a:hover {
+    font-weight: bold;
+    color: black;
+}
+
+
+/* PAGE-MENUES */
+
+nav.mainMenue {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding-top: 5rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
+
+nav.mainMenue a,
+nav.mainMenue h2 {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+nav.mainMenue a {
+    width: 12rem;
+    height: 12rem;
+
+    border: 1px solid black;
+    border-radius: 10%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    text-align: center;
+    
+}
+
+nav.mainMenue img {
+    width: 6rem;
+    height: auto;
+    object-fit: contain;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* CALENDAR */
+
+div.calendar {
+    width: inherit;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.calendar form.monthLabel {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: gray;
+}
+
+.calendar form.monthLabel input {
+    border: 1px solid lightgray;
+    background-color: transparent;
+    border-radius: 8px;
+    font-size: large;
+    color: gray;
+
+    padding: 0.5rem 1rem;
+
+    transition-duration: 50ms;
+    transition-delay: 10ms;
+    transition-timing-function: ease-in-out;
+}
+
+.calendar form.monthLabel input:hover {
+    border-color: black;
+}
+
+
+.calendar form.monthLabel p {
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+.calendar table.cal {
+    padding-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0px;
+    border-collapse: separate;
+
+}
+
+.calendar table.cal th,
+.calendar table.cal td {
+    padding: 0.5rem;
+    text-align: center;
+    align-content: center;
+    border: 1px solid transparent;
+}
+
+.calendar table.cal thead th {
+    border-bottom: 1px solid lightgray;
+    font-size: larger;
+}
+
+.calendar table.cal th.kw,
+.calendar table.cal td.kw {
+    color: grey;
+    text-align: left;
+}
+
+.calendar table.cal td.kw {
+    opacity: 80%;
+}
+
+.calendar table.cal td input {
+    font-size: large;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.calendar table.cal tr.selected td.kw {
+    background-color: white;
+    opacity: 100%;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: none;
+
+}
+
+.calendar table.cal tr.selected td {
+    background-color: lightgray;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.calendar table.cal tr.selected td:last-child {
+    border: 1px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: none;
+
+}
+
+.calendar input,
+.calendar td {
+    font-weight: bold;
+}
+
+.calendar table.cal tr.selected td.pastInMonth,
+.calendar table.cal tr.selected td.nextInMonth,
+.calendar table.cal tr.selected td.pastInMonth input {
+    color: darkgray;
+}
+
+.calendar table.cal td.pastInMonth,
+.calendar table.cal td.nextInMonth,
+.calendar table.cal td.pastInMonth input {
+    color: lightgray;
+}
+
+.calendar table.cal td.booked {
+    background-color: red;
+    border-radius: 10px;
+}
+
+.calendar table.cal td.halfbooked {
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.calendar table.cal td.nodata {
+    background-color: transparent;
+
+}
+
+.calendar table.cal td.free {
+    background-color: greenyellow;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.calendar table.cal td.selected {
+    border: 1.5px solid black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.calendar table.cal tr.selected td.free,
+.calendar table.cal tr.selected td.halfbooked,
+.calendar table.cal tr.selected td.booked {
+    border-radius: 0px;
+}
+
+.calendar table.cal td.halfbooked:hover,
+.calendar table.cal td.booked:hover,
+.calendar table.cal td.free:hover {
+    border: 1px solid black;
+}
+
+.calendar table.cal td.halfbooked:hover .tooltipInfos,
+.calendar table.cal td.booked:hover .tooltipInfos,
+.calendar table.cal td.free:hover .tooltipInfos {
+    visibility: visible;
+}
+
+.calendar table.cal td span.tooltipInfos {
+    visibility: hidden;
+    width: 13rem;
+    height: 14rem;
+    margin-left: -6rem;
+    margin-top: 1rem;
+    padding: 0rem 0.5rem;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: absolute;
+    z-index: 1;
+}
+
+.calendar table.cal td span.tooltipInfos p {
+    font-size: medium;
+    font-weight: normal;
+
+}
+
+.calendar table.cal td span.tooltipInfos p.title,
+.calendar table.cal td span.tooltipInfos p.zone {
+    font-weight: bold;
+}
+
+.tourSetCal .calendar table.cal tr:hover td.free,
+.tourSetCal .calendar table.cal tr:hover td {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-radius: 0px;
+}
+
+.tourSetCal .calendar table.cal tr:hover td.free:hover {
+    border: none;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.tourSetCal .calendar table.cal tr:hover td.kw {
+    background-color: white;
+    opacity: 100%;
+    border: 1px solid lightgray;
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.tourSetCal .calendar table.cal tr:hover td {
+    background-color: rgb(239, 239, 239);
+}
+
+.tourSetCal .calendar table.cal tr:hover td:last-child {
+    border: 1px solid lightgray;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* FILL OUT FORMULARS */
+
+.createDelivery {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+
+    justify-content: center;
+}
+
+.createDelivery form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.createDelivery form div {
+    width: inherit;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    columns: 2;
+    gap: 1rem;
+}
+
+.createDelivery form div.address {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    columns: 2;
+    width: inherit;
+}
+
+.createDelivery form div.address .numbers {
+    width: auto;
+    padding-right: 1rem;
+}
+
+.createDelivery form div.belegnummer input {
+    width: 10rem;
+}
+
+.createDelivery h4 {
+    width: inherit;
+    text-align: left;
+    font-size: large;
+    padding-top: 1rem;
+}
+
+.createDelivery form.maerkteForm select {
+    width: 4.5rem;
+    height: 2rem;
+    border: none;
+    background-color: whitesmoke;
+    font-size: 12px;
+
+}
+
+.createDelivery form input {
+    width: auto;
+    height: 1.25rem;
+    font-size: 14px;
+    padding: 1rem;
+    background-color: whitesmoke;
+    align-items: center;
+}
+
+.createDelivery input.addDevice {
+    width: 3rem;
+    height: 3rem;
+    font-size: 28px;
+    line-height: 1rem;
+
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid black;
+    text-shadow: none;
+    box-shadow: none;
+    text-decoration: none;
+
+    transition-duration: 100ms;
+    transition-timing-function: ease-in;
+    transition-delay: 10ms;
+}
+
+.createDelivery input.addDevice:hover {
+    background-color: whitesmoke;
+}
+
+.createDelivery .deviceListContainer {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.createDelivery .deviceListContainer .addDeviceList {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    align-items: center;
+}
+
+.createDelivery span {
+    padding: 2rem;
+    gap: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.createDelivery div.passwords .pw {
+    grid-column: 2 / 2;
+}
+
+.createDelivery form.halfView {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: start;
+}
+
+.createDelivery form.halfView label {
+    grid-column: span 2;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.createDelivery form.halfView div.messageEntry textarea,
+.createDelivery form.halfView div.messageEntry {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+
+    border-color: gray;
+    color: gray;
+}
+
+.createDelivery form.halfView div.messageEntry textarea:focus{
+    outline: none;
+
+}
+
+
+.createDelivery form.halfView div.createMark {
+    /* text-align: right; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: min-content;
+}
+
+.createDelivery form.halfView input.delivery {
+    grid-column: span 2;
+    place-self: end;
+    font-size: small;
+}
+
+.createDelivery form.halfView div.messages {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+.createDelivery form.halfView div.messageEntry textarea,
+.createDelivery form.halfView div.messages textarea {
+    resize: none;
+    color: black;
+    width: 100%;
+    border-radius: 10px;
+    font-size: large;
+    padding: 0.5rem;
+    /* align-self: center; */
+
+}
+
+.createDelivery form.halfView div.messageEntry p.author {
+    font-weight: bold;
+}
+
+.createDelivery form.halfView div.messages span {
+    display: flex;
+
+}
+
+.createDelivery form.halfView div.messages input {
+    place-self: end;
+}
+/* TABLE VIEW OOF SHOPS */
+
+.shop {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+
+}
+
+.shop table {
+    width: 100%;
+    text-align: left;
+    padding: 2rem;
+}
+
+.shop table thead {
+    font-size: 18px;
+}
+
+.tourSettings {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    columns: 2;
+    justify-content: center;
+    text-align: center;
+
+    gap: 1rem 3rem;
+
+}
+
+.tourSettings div.cars,
+.tourSettings div.tourvordruck {
+    grid-column: span 2;
+}
+
+
+.tourSettings h2 {
+    text-align: left;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.tourSettings div.tourvordruck>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tourSettings>div {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.tourSettings div.tourvordruck div.kwSelection {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+
+    font-size: medium;
+}
+
+.tourSettings div.kwSelection input {
+    width: 2rem;
+    height: 1.5rem;
+    padding: 0.25rem;
+    margin: 0.5rem;
+    text-decoration: none;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+
+    font-size: medium;
+    text-align: center;
+    outline: 0;
+}
+
+.tourSettings div.kwSelection input:focus,
+.tourSettings div.kwSelection input:hover {
+    border-color: black;
+}
+
+.tourSettings .tourSetCal {
+    padding: 1rem;
+}
+
+.tourSettings table {
+    padding: 1.5rem;
+    border-spacing: 0px;
+    /* gap: 1rem; */
+}
+
+.tourSettings thead th {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.tourSettings table input.textLarge,
+.tourSettings table input.number,
+.tourSettings table input.text,
+.tourSettings table textarea {
+    border: none;
+    text-decoration: none;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    width: 6rem;
+    height: 1.5rem;
+    padding: 0.25rem;
+    font-size: small;
+    font-family: inherit;
+    resize: none;
+    color: gray;
+    /* line-height: 110%; */
+}
+
+.tourSettings table input.textLarge {
+    width: 20rem;
+}
+
+.tourSettings table input.number {
+    width: 3rem;
+    height: 1.5rem;
+    text-align: center;
+}
+
+.tourSettings table textarea {
+    width: 8rem;
+    height: 5rem;
+    margin-top: 0.25rem;
+}
+
+.tourSettings table tr.new>td {
+    border-top: 1px solid lightgray;
+    height: 6rem;
+    padding-top: 0.25rem;
+}
+
+.tourSettings table tr.new>td .fieldEnd,
+.tourSettings table tr.new>td .fieldStart {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tourSettings table tr.new>td .fieldEnd {
+    justify-content: flex-end;
+}
+
+table.tour {
+    width: 100%;
+    border-spacing: 0px;
+}
+
+table.tour th,
+table.tour td {
+    padding: 0.25rem 1rem;
+}
+
+table.tour th {
+    font-size: large;
+    padding-bottom: 1rem;
+}
+
+table.tour select {
+    width: 8rem;
+    height: 1.5rem;
+    border: none;
+    background-color: white;
+
+    text-decoration: none;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+table.tour th.anzahl,
+table.tour select.anzahl {
+    width: 5rem;
+}
+
+/* DELIVERYPLAN OVERVIEW / ARCHIV */
+
+.deliveryPlanOverview {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.deliveryPlanOverview th,
+.deliveryPlanOverview td {
+    border: 1px solid lightgray;
+}
+
+.deliveryPlanOverview table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    border-spacing: 0px;
+}
+
+.deliveryPlanOverview th {
+    font-size: large;
+    padding: 1rem;
+    background-color: #EFEFEF;
+    border-top: 0px;
+}
+
+.deliveryPlanOverview td {
+    padding: 0.5rem;
+}
+
+.deliveryPlanOverview table tr:hover td {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+/* MultiSelection for Zones */
+
+.zoneSelection {
+    display: inline-block;
+}
+
+.zoneSelection .anchor {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 50px 5px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.zoneSelection ul.items {
+    padding: 2px;
+    display: none;
+    margin: 0;
+    border: 1px solid lightgray;
+    border-top: none;
+    list-style-type: none;
+    border-radius: 10px;
+    text-align: left;
+    padding: 0.25rem;
+    padding-left: 0.5rem;
+
+}
+
+.zoneSelection.visible .items {
+    display: block;
+}
+
+/* DELIVERY CARDS WITH SHORT INFORMATION FOR SETTING UP DAILY TOURSCHEDULE */
+
+.setUpContainer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: start;
+}
+
+.carsContainer {
+    border: 1px solid lightgray;
+    align-self: flex-start;
+    border-radius: 10px;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.carsContainer .carContainer {
+    border: 1px solid black;
+    border-radius: 10px;
+
+    width: 15rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.deliveryCardContainer {
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.deliveryCardContainer .deliveryCard {
+    width: 30rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border: 1px solid lightgray;
+    padding: 1rem;
+    border-radius: 10px;
+    align-self: flex-end;
+}
+.deliveryCardContainer .deliveryCard:hover .setUpMenue {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: inherit;
+}
+
+.deliveryCardContainer .deliveryCard .contactInfos,
+.deliveryCardContainer .deliveryCard .deviceInfos{
+    display: block;
+}
+.deliveryCardContainer .deliveryCard .setUpMenue{
+    display: none;
+}
+
+.deliveryCardContainer .deliveryCard:hover .deviceInfos,
+.deliveryCardContainer .deliveryCard:hover .contactInfos{
+    display: none;
+}
+
+/* .deliveryCardContainer .deliveryCard:hover{
+    border-color: black;
+} */
+
+.deliveryCardContainer .deliveryCard .carCard {
+    width: 7rem;
+    height: 6rem;
+    border: 1px solid lightgray;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.deliveryCardContainer .deliveryCard .carCard:hover {
+    border-color: black;
+    font-weight: bold;
+}
+
+.deliveryCardContainer .deliveryCard.inCar .contactInfos {
+    color: purple;
+}
+.deliveryCardContainer .inCar .deviceInfos,
+.deliveryCardContainer .inCar .setUpMenue{
+    display: none;
+}
+
+.carCard span {
+    display: flex;
+    width: 7rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.carCard span p {
+    display: inline-block;
+    max-width: 30%;
+}
+
+.carCard p.car {
+    font-weight: bold;
+}
+
+.deliveryCardContainer .inCar {
+    border: 1px solid purple;
+}
+
+.textContainer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}

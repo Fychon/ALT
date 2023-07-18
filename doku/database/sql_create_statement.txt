@@ -1,0 +1,38 @@
+CREATE TABLE users(
+    id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    username varchar(255),
+    email varchar(255),
+    firstname varchar(255),
+    lastname varchar(255),
+    permission int,
+    shopID varchar(255),
+    passwd varchar(255));
+
+CREATE TABLE shops(
+    id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    shop_ref varchar(255),
+    name varchar(255),
+    postalcode varchar(255),
+    city varchar(255),
+    street varchar(255),
+    number int);
+
+CREATE TABLE deliveryStates(
+    id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    stateName varchar(255)
+);
+
+INSERT INTO deliveryStates( 
+    id, stateName
+) VALUES 
+    ('1', 'waitForDeliveryDate'),
+    ('2', 'booked'),
+    ('3', 'done'),
+    ('4', 'canceled');
+
+INSERT INTO users(
+    username, firstname, lastname, email, permission, passwd)
+VALUES
+('keljo', 'jo', 'kell', 'no@ma.il', '1', '$2y$10$qTQe8Ec.7r.457LahAyn4exyglaa/zFJogaoeskIY5Soxp6fOKJlW');
+
+//PASSWORD: geheim USERNAME: keljo
