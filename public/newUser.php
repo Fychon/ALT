@@ -38,7 +38,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (((empty($temp_username)))) {
             $contact_err = "Bitte Username eingeben.";
         } else {
-            $username = trim($_POST["username"]);
+            $sql = "SELECT id FROM users WHERE username = ?";
+            if ($stmt = mysqli_prepare($link, $sql)) {
+                $prepared_user = strtolower(trim($_POST["username"]));
+                mysqli_stmt_bind_param($stmt, "s", $prepared_user);
+                // Attempt to execute the prepared statement
+                if (mysqli_stmt_execute($stmt)) {
+                    // Store result
+                    mysqli_stmt_store_result($stmt);
+                    // Check if shop exists, if yes then verify password
+                    if (mysqli_stmt_num_rows($stmt) == 1) {
+                        $contact_err = "Dieser Username ist schon vergeben.";
+                    } else {
+                        $username = $prepared_user;
+                    }
+                }
+            }
         }
         if ((empty($temp_vorname))) {
             $contact_err = "Bitte Vorname eingeben.";

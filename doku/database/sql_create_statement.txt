@@ -33,6 +33,6 @@ INSERT INTO deliveryStates(
 INSERT INTO users(
     username, firstname, lastname, email, permission, passwd)
 VALUES
-('keljo', 'jo', 'kell', 'no@ma.il', '1', '$2y$10$qTQe8Ec.7r.457LahAyn4exyglaa/zFJogaoeskIY5Soxp6fOKJlW');
+('keljo', 'jo', 'kell', 'no@ma.il', '0', '$2y$10$qTQe8Ec.7r.457LahAyn4exyglaa/zFJogaoeskIY5Soxp6fOKJlW');
 
 //PASSWORD: geheim USERNAME: keljo
