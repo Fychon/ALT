@@ -38,10 +38,6 @@ services:
       MYSQL_DATABASE: webappdb
       MYSQL_USERNAME: webapp
       MYSQL_USERPASS: hopper
-
-      # MYSQL_DATABASE: gwprg-23-team-13
-      # MYSQL_USERNAME: gwprg-23-team-13
-      # MYSQL_USERPASS: iwvsbpmbtyzvx&R2
   db:
     image: "mariadb:10"
     environment:
